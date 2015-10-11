@@ -11,7 +11,7 @@ namespace WebAppProj.Models
     public class brand
     {   
         [Key]
-        public long id { get; set; }
+        public long brandId { get; set; }
 
         public string name { get; set; }
 

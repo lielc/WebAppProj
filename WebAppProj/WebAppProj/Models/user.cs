@@ -10,7 +10,7 @@ namespace WebAppProj.Models
     public class user
     {
         [Key]
-        public long id { get; set; }
+        public long userId { get; set; }
 
         public string firstName { get; set; }
 

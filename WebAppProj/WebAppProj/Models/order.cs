@@ -10,18 +10,23 @@ namespace WebAppProj.Models
 {
     public class order
     {
-        [Key][Column(Order = 0)]
+        [Key]
         public long orderNum  { get; set; }
 
-        [Key][Column(Order = 1)]
+        [Key]
+        [ForeignKey("product"), Column("productId")]
         public long userId { get; set; }
 
-        [Key][Column(Order = 2)]
+        [Key]
+        [ForeignKey("user"), Column("userId")]
         public long productId { get; set; }
 
         public long quantity { get; set; }
         
         public string status { get; set; }
+
+        public virtual user user { get; set; }
+        public virtual product product { get; set; }
     }
 
     public class ordersDb : DbContext

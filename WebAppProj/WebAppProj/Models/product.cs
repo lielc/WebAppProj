@@ -11,11 +11,11 @@ namespace WebAppProj.Models
     public class product
     {
         [Key]
-        public long id { get; set; }
+        public long productId { get; set; }
 
         public string name { get; set; }
 
-        [ForeignKey("brand"), Column("id")]
+        [ForeignKey("brand"), Column("brandId")]
         public long brandId { get; set; }
 
         public string category { get; set; }
