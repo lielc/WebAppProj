@@ -12,7 +12,7 @@ namespace WebAppProj.Models
         public string name { get; set; }
         public string location { get; set; }
         [ForeignKey("instructor"), Column("instructorId")]
-        public string instructorId { get; set; }
+        public long instructorId { get; set; }
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
 
@@ -21,5 +21,7 @@ namespace WebAppProj.Models
     public class lectureDb : DbContext
     {
         public DbSet<lecture> lectures { get; set; }
+
+        public System.Data.Entity.DbSet<WebAppProj.Models.instructor> instructors { get; set; }
     }
 }

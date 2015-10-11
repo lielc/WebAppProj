@@ -24,5 +24,7 @@ namespace WebAppProj.Models
     public class userDb : DbContext
     {
         public DbSet<user> users { get; set; }
+
+        public System.Data.Entity.DbSet<WebAppProj.Models.lecture> lectures { get; set; }
     }
 }

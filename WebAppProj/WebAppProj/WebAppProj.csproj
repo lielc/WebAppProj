@@ -160,6 +160,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\instructorsController.cs" />
+    <Compile Include="Controllers\lecturesController.cs" />
+    <Compile Include="Controllers\usersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -222,6 +225,21 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\instructors\Create.cshtml" />
+    <Content Include="Views\instructors\Delete.cshtml" />
+    <Content Include="Views\instructors\Details.cshtml" />
+    <Content Include="Views\instructors\Edit.cshtml" />
+    <Content Include="Views\instructors\Index.cshtml" />
+    <Content Include="Views\lectures\Create.cshtml" />
+    <Content Include="Views\lectures\Delete.cshtml" />
+    <Content Include="Views\lectures\Details.cshtml" />
+    <Content Include="Views\lectures\Edit.cshtml" />
+    <Content Include="Views\lectures\Index.cshtml" />
+    <Content Include="Views\users\Create.cshtml" />
+    <Content Include="Views\users\Delete.cshtml" />
+    <Content Include="Views\users\Details.cshtml" />
+    <Content Include="Views\users\Edit.cshtml" />
+    <Content Include="Views\users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
