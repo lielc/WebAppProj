@@ -17,14 +17,9 @@ namespace WebAppProj.Models
         public string email { get; set; }
         public string phoneNum { get; set; }
         [ForeignKey("lecture"), Column("lectureId")]
-        public long classId { get; set; }
+        public long lectureId { get; set; }
         public string password { get; set; }
+        public string userRole { get; set; }
         public virtual lecture lecture { get; set; }
-    }
-    public class userDb : DbContext
-    {
-        public DbSet<user> users { get; set; }
-
-        public System.Data.Entity.DbSet<WebAppProj.Models.lecture> lectures { get; set; }
     }
 }

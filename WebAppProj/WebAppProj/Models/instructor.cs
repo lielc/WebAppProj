@@ -12,8 +12,4 @@ namespace WebAppProj.Models
         public string internship { get; set; }
         public string pathPic { get; set; }
     }
-    public class instructorDb : DbContext
-    {
-        public DbSet<instructor> instructors { get; set; }
-    }
 }

@@ -12,7 +12,7 @@ namespace WebAppProj.Controllers
 {
     public class usersController : Controller
     {
-        private userDb db = new userDb();
+        private academyContext db = new academyContext();
 
         // GET: users
         public ActionResult Index()
@@ -57,7 +57,7 @@ namespace WebAppProj.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.classId = new SelectList(db.lectures, "lectureId", "name", user.classId);
+            ViewBag.classId = new SelectList(db.lectures, "lectureId", "name", user.lectureId);
             return View(user);
         }
 
@@ -73,7 +73,7 @@ namespace WebAppProj.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.classId = new SelectList(db.lectures, "lectureId", "name", user.classId);
+            ViewBag.classId = new SelectList(db.lectures, "lectureId", "name", user.lectureId);
             return View(user);
         }
 
@@ -90,7 +90,7 @@ namespace WebAppProj.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.classId = new SelectList(db.lectures, "lectureId", "name", user.classId);
+            ViewBag.classId = new SelectList(db.lectures, "lectureId", "name", user.lectureId);
             return View(user);
         }
 

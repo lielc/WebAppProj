@@ -18,10 +18,4 @@ namespace WebAppProj.Models
 
         public virtual instructor instructor { get; set; }
     }
-    public class lectureDb : DbContext
-    {
-        public DbSet<lecture> lectures { get; set; }
-
-        public System.Data.Entity.DbSet<WebAppProj.Models.instructor> instructors { get; set; }
-    }
 }

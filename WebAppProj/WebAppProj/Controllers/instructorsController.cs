@@ -12,7 +12,7 @@ namespace WebAppProj.Controllers
 {
     public class instructorsController : Controller
     {
-        private instructorDb db = new instructorDb();
+        private academyContext db = new academyContext();
 
         // GET: instructors
         public ActionResult Index()
