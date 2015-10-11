@@ -16,10 +16,10 @@ namespace WebAppProj.Models
         public string lastName { get; set; }
         public string email { get; set; }
         public string phoneNum { get; set; }
-        [ForeignKey("lectuer"), Column("lectuerId")]
+        [ForeignKey("lecture"), Column("lectureId")]
         public long classId { get; set; }
-        public string password { get; set; }      
-        public virtual lecture lectuer { get; set; }
+        public string password { get; set; }
+        public virtual lecture lecture { get; set; }
     }
     public class usersDb : DbContext
     {
