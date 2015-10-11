@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -22,5 +23,9 @@ namespace WebAppProj.Models
         public string password { get; set; }
 
         public string address { get; set; }
+    }
+    public class usersDb : DbContext
+    {
+        public DbSet<user> users { get; set; }
     }
 }
