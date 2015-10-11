@@ -176,9 +176,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\AcademyDb.mdf" />
-    <Content Include="App_Data\AcademyDb_log.ldf">
-      <DependentUpon>AcademyDb.mdf</DependentUpon>
+    <Content Include="App_Data\aspnet-WebAppProj-20151010094231.mdf" />
+    <Content Include="App_Data\aspnet-WebAppProj-20151010094231_log.ldf">
+      <DependentUpon>aspnet-WebAppProj-20151010094231.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
