@@ -21,7 +21,7 @@ namespace WebAppProj.Models
         public string password { get; set; }
         public virtual lecture lecture { get; set; }
     }
-    public class usersDb : DbContext
+    public class userDb : DbContext
     {
         public DbSet<user> users { get; set; }
     }
